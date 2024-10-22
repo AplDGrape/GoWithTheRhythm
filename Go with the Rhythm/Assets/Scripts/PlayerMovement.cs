@@ -7,12 +7,15 @@ public class PlayerMovement : MonoBehaviour
 
     //Speed of Player
     public float speed = 5;
-    public Rigidbody rb;
+    [SerializeField] public Rigidbody rb;
     
     //Makes horizontal move faster than speed
-    public float horizontalMultiplier = 1.5f;
+    [SerializeField] public float horizontalMultiplier = 1.5f;
     
     float horizontalInput;
+
+    [SerializeField] float jumpForce = 300f;
+    [SerializeField] LayerMask groundMask;
 
     void FixedUpdate()
     {
@@ -32,6 +35,10 @@ public class PlayerMovement : MonoBehaviour
         //Get key inputs for "left" and "right"
         horizontalInput = Input.GetAxis("Horizontal");
 
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Jump();
+        }
         if (transform.position.y < -5)
         {
             Death();
@@ -49,5 +56,15 @@ public class PlayerMovement : MonoBehaviour
     void Restart()
     {
         SceneManager.LoadScene("MainMenu");
+    }
+
+    void Jump()
+    {
+        //Check if grounded
+        float height = GetComponent<Collider>().bounds.size.y;
+        bool isGrounded = Physics.Raycast(transform.position, Vector3.down, (height / 2) + 0.1f, groundMask);
+
+        //If grounded, make a jump
+        rb.AddForce(Vector3.up * jumpForce);
     }
 }

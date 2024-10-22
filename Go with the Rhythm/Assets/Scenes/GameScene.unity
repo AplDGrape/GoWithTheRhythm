@@ -256,6 +256,10 @@ MonoBehaviour:
   speed: 5
   rb: {fileID: 76545408}
   horizontalMultiplier: 1.5
+  jumpForce: 300
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!95 &76545414
 Animator:
   serializedVersion: 5
