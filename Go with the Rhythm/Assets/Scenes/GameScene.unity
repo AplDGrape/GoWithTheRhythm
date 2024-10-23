@@ -255,6 +255,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   rb: {fileID: 76545408}
+  animator: {fileID: 76545414}
   horizontalMultiplier: 1.5
   jumpForce: 300
   groundMask:
