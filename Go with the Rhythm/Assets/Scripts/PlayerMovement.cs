@@ -14,9 +14,8 @@ public class PlayerMovement : MonoBehaviour
 
     //Makes horizontal move faster than speed
     [SerializeField] public float horizontalMultiplier = 1.5f;
-    
+
     float horizontalInput;
-    bool isGrounded;
 
     [SerializeField] float jumpForce = 300f;
     [SerializeField] LayerMask groundMask;
@@ -39,12 +38,23 @@ public class PlayerMovement : MonoBehaviour
         //Get key inputs for "left" and "right"
         horizontalInput = Input.GetAxis("Horizontal");
 
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Jump();
-            //animator.SetBool("isJumping", true);
+        //Check if grounded
+        float height = GetComponent<Collider>().bounds.size.y;
+        bool isGrounded = Physics.Raycast(transform.position, Vector3.down, (height / 2) + 0.1f, groundMask);
 
+        if (isGrounded)
+        {
+            animator.SetBool("isJumping", false);
             
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                Jump();
+            }
+
+        }
+        else
+        {
+            animator.SetBool("isJumping", true);
         }
         if (transform.position.y < -5)
         {
@@ -67,13 +77,11 @@ public class PlayerMovement : MonoBehaviour
 
     void Jump()
     {
-        //Check if grounded
-        float height = GetComponent<Collider>().bounds.size.y;
-        isGrounded = Physics.Raycast(transform.position, Vector3.down, (height / 2) + 0.1f, groundMask);
+        ////Check if grounded
+        //float height = GetComponent<Collider>().bounds.size.y;
+        //isGrounded = Physics.Raycast(transform.position, Vector3.down, (height / 2) + 0.1f, groundMask);
 
         //If grounded, make a jump
         rb.AddForce(Vector3.up * jumpForce);
-
-        //animator.SetBool("isJumping", true);
     }
 }
