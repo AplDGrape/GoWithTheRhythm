@@ -21,6 +21,21 @@ public class AudioManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (PauseMenu.GameisPaused == true)
+        {
+            if (musicSource.isPlaying)
+            {
+                
+                musicSource.Pause();
+            }
+        }
+        else
+        {
+            if (!musicSource.isPlaying)
+            {
+                Time.timeScale = 1f;
+                musicSource.Play();
+            }
+        }
     }
 }
