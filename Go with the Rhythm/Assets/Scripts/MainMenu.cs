@@ -9,7 +9,7 @@ public class MainMenu : MonoBehaviour
     {
         //Get Next Scene
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("LevelSelect");
 
     }
 

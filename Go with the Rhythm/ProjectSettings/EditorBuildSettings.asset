@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/LevelSelect.unity
+    guid: a1d10fadc7fd1864485d6a09e68784d3
+  - enabled: 1
+    path: Assets/Scenes/ElectricTherapy.unity
+    guid: 1f6e607eab8cf4749826d5c3e280bbfb
   m_configObjects: {}
