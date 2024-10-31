@@ -20,6 +20,7 @@ public class CameraFollow : MonoBehaviour
         //Follow player like a endless runner type game
         Vector3 targetPos = player.position + offset;
         targetPos.x = 0;
+        targetPos.y = 8;
         transform.position = targetPos;
     }
 }
