@@ -937,11 +937,13 @@ m_ResolvedPackages:
     - 1.9.1
     - 1.9.2
     - 1.9.4
+    - 1.9.5
     compatible:
     - 1.9.1
     - 1.9.2
     - 1.9.4
-    verified: 1.9.4
+    - 1.9.5
+    verified: 1.9.5
   dependencies:
   - name: com.unity.ugui
     version: 1.0.0
