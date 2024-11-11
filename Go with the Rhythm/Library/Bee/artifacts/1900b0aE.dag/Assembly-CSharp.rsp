@@ -351,6 +351,8 @@
 "Assets/Scripts/AudioLoudnessVisualizer.cs"
 "Assets/Scripts/AudioManager.cs"
 "Assets/Scripts/CameraFollow.cs"
+"Assets/Scripts/ET_GroundSpawner.cs"
+"Assets/Scripts/ET_Obstacles.cs"
 "Assets/Scripts/GroundSpawner.cs"
 "Assets/Scripts/GroundTile.cs"
 "Assets/Scripts/LevelSelectScript.cs"
