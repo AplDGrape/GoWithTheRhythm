@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
+    public float timeStart;
+    public static float timescore;
+    public static bool SongEnd = false;
+
     [Header("----------Audio Source----------")]
     [SerializeField] AudioSource musicSource;
     [SerializeField] AudioSource SFXSource;
@@ -21,6 +25,8 @@ public class AudioManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        timeStart += Time.deltaTime;
+
         if (PauseMenu.GameisPaused == true)
         {
             if (musicSource.isPlaying)
@@ -37,5 +43,21 @@ public class AudioManager : MonoBehaviour
                 musicSource.Play();
             }
         }
+
+        if (timeStart >= musicSource.clip.length)
+        {
+            SongEnd = true;
+            Debug.Log("End");
+            Time.timeScale = 0f;
+            musicSource.Stop();
+        }
+        else
+        {
+            Time.timeScale = 1;
+            SongEnd = false;
+        }
+        timescore = timeStart;
+
+        Debug.Log(musicSource.time);
     }
 }

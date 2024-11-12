@@ -353,6 +353,7 @@
 "Assets/Scripts/CameraFollow.cs"
 "Assets/Scripts/ET_GroundSpawner.cs"
 "Assets/Scripts/ET_Obstacles.cs"
+"Assets/Scripts/GameOverMenu.cs"
 "Assets/Scripts/GroundSpawner.cs"
 "Assets/Scripts/GroundTile.cs"
 "Assets/Scripts/LevelSelectScript.cs"
