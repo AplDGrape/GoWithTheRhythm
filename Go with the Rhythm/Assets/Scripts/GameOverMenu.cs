@@ -12,6 +12,8 @@ public class GameOverMenu : MonoBehaviour
 
     public TextMeshProUGUI scoreText;
 
+    public GameObject[] stars;
+
     // Update is called once per frame
     void Update()
     {
@@ -70,5 +72,22 @@ public class GameOverMenu : MonoBehaviour
     {
         //gameObject.SetActive(true);
         scoreText.text = score.ToString() + " Points";
+
+        //Star System
+        if (score >= 21 && score <= 55)
+        {
+            stars[0].SetActive(true);
+        }
+        else if (score >= 56 && score <= 110)
+        {
+            stars[0].SetActive(true);
+            stars[1].SetActive(true);
+        }
+        else if (score >= 111)
+        {
+            stars[0].SetActive(true);
+            stars[1].SetActive(true);
+            stars[2].SetActive(true);
+        }
     }
 }

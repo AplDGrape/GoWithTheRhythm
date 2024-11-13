@@ -53,7 +53,14 @@ public class AudioManager : MonoBehaviour
         }
         else
         {
-            Time.timeScale = 1;
+            if (PauseMenu.GameisPaused == true)
+            {
+                Time.timeScale = 0;
+            }
+            else
+            {
+                Time.timeScale = 1;
+            }
             SongEnd = false;
         }
         timescore = timeStart;
