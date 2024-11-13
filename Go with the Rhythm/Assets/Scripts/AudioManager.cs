@@ -31,7 +31,7 @@ public class AudioManager : MonoBehaviour
         {
             if (musicSource.isPlaying)
             {
-                
+
                 musicSource.Pause();
             }
         }
@@ -44,7 +44,7 @@ public class AudioManager : MonoBehaviour
             }
         }
 
-        if (timeStart >= musicSource.clip.length)
+        if (timeStart >= musicSource.clip.length || PlayerMovement.alive == false)
         {
             SongEnd = true;
             Debug.Log("End");

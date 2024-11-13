@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
-    bool alive = true;
+    public static bool alive = true;
 
     //Speed of Player
     public float speed = 5;
@@ -19,6 +19,13 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] float jumpForce = 300f;
     [SerializeField] LayerMask groundMask;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        //Starts the player to be alive
+        alive = true;
+    }
 
     void FixedUpdate()
     {
@@ -64,16 +71,17 @@ public class PlayerMovement : MonoBehaviour
 
     public void Death()
     {
+        //Kill player mwahahaha
         alive = false;
 
         //Restart
-        Invoke("Restart", 1);
+        //Invoke("Restart", 1);
     }
 
-    void Restart()
-    {
-        SceneManager.LoadScene("MainMenu");
-    }
+    //void Restart()
+    //{
+    //    SceneManager.LoadScene("MainMenu");
+    //}
 
     void Jump()
     {
