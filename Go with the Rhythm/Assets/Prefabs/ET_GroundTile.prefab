@@ -489,6 +489,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstaclePrefab: {fileID: 6749162121507979588, guid: b1a762780e672ef4393dd303de15a1e7, type: 3}
   tallObstaclePrefab: {fileID: 6749162121507979588, guid: 8355b6fd70c40ae488244191bd1a1058, type: 3}
+  ElectricObstaclePrefab: {fileID: 6749162121507979588, guid: ad1e60ed7e24eb74eb9de5ac4e2257f1, type: 3}
   tallObstacleChance: 0.2
 --- !u!1 &7053498346120379409
 GameObject:

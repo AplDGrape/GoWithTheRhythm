@@ -5,6 +5,8 @@ public class ET_GroundSpawner : MonoBehaviour
     [SerializeField] GameObject groundTile;
     Vector3 nextSpawnPoint;
 
+    int i = 0;
+
     public void SpawnTile(bool spawnData)
     {
         //What to spawn, where to spawn, what rotation to spawn (identity = no rotation)
@@ -15,7 +17,9 @@ public class ET_GroundSpawner : MonoBehaviour
         //Whether to spawn data/items on the tile
         if (spawnData)
         {
-            temp.GetComponent<ET_Obstacles>().SpawnObstacle();
+            temp.GetComponent<ET_Obstacles>().SpawnObstacle(i);
+
+            i++;
         }
     }
 
@@ -24,7 +28,7 @@ public class ET_GroundSpawner : MonoBehaviour
     {
         for (int i = 0; i < 10; i++)
         {
-            if (i < 9)
+            if (i < 10)
             {
                 SpawnTile(false);
             }
