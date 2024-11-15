@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
     public static bool alive = true;
 
     //Speed of Player
-    public float speed = 5;
+    public float speed = 5.27f;
     [SerializeField] public Rigidbody rb;
 
     //Get animator

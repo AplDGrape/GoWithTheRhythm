@@ -35,6 +35,7 @@ public class ET_Obstacles : MonoBehaviour
         int obstacleSpawnIndex = Random.Range(2, 10);
         Transform spawnPoint = transform.GetChild(obstacleSpawnIndex).transform;
 
+        //Predetermined Spawned obstacles
         if (CurrentNodeSpawn == 0)
         {
             spawnPoint = transform.GetChild(2).transform;
@@ -72,6 +73,146 @@ public class ET_Obstacles : MonoBehaviour
             //Spawn the obstacle at the position
             Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
         }
+        else if (CurrentNodeSpawn == 5)
+        {
+            spawnPoint = transform.GetChild(3).transform;
+
+            //Spawn the obstacle at the position
+            Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
+
+            spawnPoint = transform.GetChild(2).transform;
+
+            //Spawn the obstacle at the position
+            Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
+        }
+        else if (CurrentNodeSpawn == 6)
+        {
+            spawnPoint = transform.GetChild(3).transform;
+
+            //Spawn the obstacle at the position
+            Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
+
+            spawnPoint = transform.GetChild(6).transform;
+
+            //Spawn the obstacle at the position
+            Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
+
+            spawnPoint = transform.GetChild(2).transform;
+
+            //Spawn the obstacle at the position
+            Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
+            
+            spawnPoint = transform.GetChild(5).transform;
+
+            //Spawn the obstacle at the position
+            Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
+        }
+        else if (CurrentNodeSpawn == 7)
+        {
+            spawnPoint = transform.GetChild(9).transform;
+
+            //Spawn the obstacle at the position
+            Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
+
+            spawnPoint = transform.GetChild(8).transform;
+
+            //Spawn the obstacle at the position
+            Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
+        }
+        else if (CurrentNodeSpawn == 8)
+        {
+            spawnPoint = transform.GetChild(9).transform;
+
+            //Spawn the obstacle at the position
+            Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
+
+            spawnPoint = transform.GetChild(8).transform;
+
+            //Spawn the obstacle at the position
+            Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
+
+            spawnPoint = transform.GetChild(5).transform;
+
+            //Spawn the obstacle at the position
+            Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
+
+            spawnPoint = transform.GetChild(6).transform;
+
+            //Spawn the obstacle at the position
+            Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
+        }
+        else if (CurrentNodeSpawn == 9)
+        {
+            spawnPoint = transform.GetChild(3).transform;
+
+            //Spawn the obstacle at the position
+            Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
+
+            spawnPoint = transform.GetChild(8).transform;
+
+            //Spawn the obstacle at the position
+            Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
+        }
+        else if (CurrentNodeSpawn == 10)
+        {
+            spawnPoint = transform.GetChild(3).transform;
+
+            //Spawn the obstacle at the position
+            Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
+
+            spawnPoint = transform.GetChild(9).transform;
+
+            //Spawn the obstacle at the position
+            Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
+
+            spawnPoint = transform.GetChild(2).transform;
+
+            //Spawn the obstacle at the position
+            Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
+
+            spawnPoint = transform.GetChild(8).transform;
+
+            //Spawn the obstacle at the position
+            Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
+        }
+        else if (CurrentNodeSpawn == 11)
+        {
+            spawnPoint = transform.GetChild(3).transform;
+
+            //Spawn the obstacle at the position
+            Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
+
+            spawnPoint = transform.GetChild(9).transform;
+
+            //Spawn the obstacle at the position
+            Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
+        }
+        else if (CurrentNodeSpawn == 15)
+        {
+            spawnPoint = transform.GetChild(3).transform;
+
+            //Spawn the obstacle at the position
+            Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
+
+            spawnPoint = transform.GetChild(9).transform;
+
+            //Spawn the obstacle at the position
+            Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
+
+            spawnPoint = transform.GetChild(4).transform;
+
+            //Spawn the obstacle at the position
+            Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
+
+            spawnPoint = transform.GetChild(10).transform;
+
+            //Spawn the obstacle at the position
+            Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
+        }
+        else if (CurrentNodeSpawn == 16)
+        {
+            
+        }
         else
         {
             if (random < tallObstacleChance)
@@ -84,7 +225,7 @@ public class ET_Obstacles : MonoBehaviour
             }
 
             //Spawn the obstacle at the position
-            Instantiate(obstacleToSpawn, spawnPoint.position, Quaternion.identity, transform);
+            //Instantiate(obstacleToSpawn, spawnPoint.position, Quaternion.identity, transform);
         }
 
         //Spawn the obstacle at the position
