@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
     public static bool alive = true;
 
     //Speed of Player
-    public float speed = 5.27f;
+    public float speed = 11.66666666f; //Speed = Distance * (BPM / 60) -> 5 * (140 / 60)
     [SerializeField] public Rigidbody rb;
 
     //Get animator
