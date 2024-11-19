@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
     public Animator animator;
 
     //Makes horizontal move faster than speed
-    [SerializeField] public float horizontalMultiplier = 1.5f;
+    [SerializeField] public float horizontalMultiplier = 0.75f;
 
     float horizontalInput;
 
