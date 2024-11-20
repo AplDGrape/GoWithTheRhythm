@@ -6,6 +6,7 @@ public class ET_GroundSpawner : MonoBehaviour
     Vector3 nextSpawnPoint;
 
     int i = 0;
+    int j = 0;
 
     public void SpawnTile(bool spawnData)
     {
@@ -21,6 +22,11 @@ public class ET_GroundSpawner : MonoBehaviour
 
             i++;
         }
+
+        //Spawn the floors
+        temp.GetComponent<ET_Floor>().SpawnFloor(j);
+
+        j++;
     }
 
     // Start is called before the first frame update

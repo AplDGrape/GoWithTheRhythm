@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8741872374038244250}
   - component: {fileID: 8741872374038244251}
   - component: {fileID: 8741872374038244248}
-  - component: {fileID: 8741872374038244249}
+  - component: {fileID: 1899020666640442505}
   m_Layer: 0
   m_Name: 1_Wall
   m_TagString: Untagged
@@ -1105,8 +1105,8 @@ MonoBehaviour:
   - {x: 0, y: 9, z: -9}
   - {x: -2, y: 8, z: -9}
   - {x: -2, y: 8, z: -10}
-  - {x: 0, y: 0, z: -9}
-  - {x: 0, y: 0, z: -10}
+  - {x: 0, y: -6.9999995, z: -9}
+  - {x: 0, y: -6.9999995, z: -10}
   - {x: 0, y: 1, z: -10}
   - {x: 0, y: 1, z: -9}
   - {x: 0, y: 1, z: -9}
@@ -1145,8 +1145,8 @@ MonoBehaviour:
   - {x: -2, y: 8, z: 0}
   - {x: -2, y: 8, z: -1}
   - {x: 0, y: 9, z: -1}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: -1}
+  - {x: 0, y: -6.9999995, z: 0}
+  - {x: 0, y: -6.9999995, z: -1}
   - {x: 0, y: 1, z: -1}
   - {x: 0, y: 1, z: 0}
   - {x: 0, y: 1.25, z: -1}
@@ -1225,8 +1225,8 @@ MonoBehaviour:
   - {x: -2, y: 8, z: -7}
   - {x: 0, y: 9, z: -7}
   - {x: 0, y: 9, z: -3}
-  - {x: 0, y: 0, z: -3}
-  - {x: 0, y: 0, z: -7}
+  - {x: 0, y: -6.9999995, z: -3}
+  - {x: 0, y: -6.9999995, z: -7}
   - {x: 0, y: 1, z: -7}
   - {x: 0, y: 1, z: -3}
   - {x: 0, y: 1, z: -7}
@@ -1271,13 +1271,13 @@ MonoBehaviour:
   - {x: 0, y: 4, z: -3}
   - {x: 0, y: 4.25, z: -3}
   - {x: 0, y: 4.25, z: -1}
-  - {x: 0, y: 0, z: -1}
-  - {x: 0, y: 0, z: -3}
+  - {x: 0, y: -6.9999995, z: -1}
+  - {x: 0, y: -6.9999995, z: -3}
   - {x: 0, y: 1, z: -3}
   - {x: 0, y: 1, z: -1}
   - {x: 0, y: 1, z: -1}
-  - {x: 0, y: 0, z: -7}
-  - {x: 0, y: 0, z: -9}
+  - {x: 0, y: -6.9999995, z: -7}
+  - {x: 0, y: -6.9999995, z: -9}
   - {x: 0, y: 1, z: -9}
   - {x: 0, y: 1, z: -9}
   - {x: 0, y: 1, z: -7}
@@ -1334,8 +1334,8 @@ MonoBehaviour:
   - {x: -9, y: 7.6558576}
   - {x: -9, y: 5.7537446}
   - {x: -10, y: 5.7537446}
-  - {x: -9, y: 0}
-  - {x: -10, y: 0}
+  - {x: -9, y: -6.999389}
+  - {x: -10, y: -6.999389}
   - {x: -10, y: 0.9999128}
   - {x: -9, y: 0.9999128}
   - {x: -9, y: 0.9999128}
@@ -1374,8 +1374,8 @@ MonoBehaviour:
   - {x: 0, y: 5.7537446}
   - {x: -1, y: 5.7537446}
   - {x: -1, y: 7.6558576}
-  - {x: 0, y: 0}
-  - {x: -1, y: 0}
+  - {x: 0, y: -6.999389}
+  - {x: -1, y: -6.999389}
   - {x: -1, y: 0.9999128}
   - {x: 0, y: 0.9999128}
   - {x: -1, y: 1.249891}
@@ -1454,8 +1454,8 @@ MonoBehaviour:
   - {x: -7, y: 5.7537446}
   - {x: -7, y: 7.6558576}
   - {x: -3, y: 7.6558576}
-  - {x: -3, y: 0}
-  - {x: -7, y: 0}
+  - {x: -3, y: -6.999389}
+  - {x: -7, y: -6.999389}
   - {x: -7, y: 0.9999128}
   - {x: -3, y: 0.9999128}
   - {x: -7, y: 0.9999128}
@@ -1500,13 +1500,13 @@ MonoBehaviour:
   - {x: -3, y: 4}
   - {x: -3, y: 4.25}
   - {x: -1, y: 4.25}
-  - {x: -1, y: 0}
-  - {x: -3, y: 0}
+  - {x: -1, y: -6.9999995}
+  - {x: -3, y: -6.9999995}
   - {x: -3, y: 1}
   - {x: -1, y: 1}
   - {x: -1, y: 1}
-  - {x: -7, y: 0}
-  - {x: -9, y: 0}
+  - {x: -7, y: -6.9999995}
+  - {x: -9, y: -6.9999995}
   - {x: -9, y: 1}
   - {x: -9, y: 1}
   - {x: -7, y: 1}
@@ -1782,7 +1782,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 4251
+  m_VersionIndex: 4509
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -1865,8 +1865,8 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8741872374038244255}
   m_Mesh: {fileID: 0}
---- !u!64 &8741872374038244249
-MeshCollider:
+--- !u!65 &1899020666640442505
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1875,7 +1875,6 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
+  serializedVersion: 2
+  m_Size: {x: 3, y: 17, z: 10}
+  m_Center: {x: -1.5, y: 1.5000002, z: -5}
