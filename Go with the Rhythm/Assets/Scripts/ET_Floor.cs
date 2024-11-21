@@ -7,6 +7,7 @@ public class ET_Floor : MonoBehaviour
 
     //Floor
     [SerializeField] GameObject floorPrefab;
+    [SerializeField] GameObject emptyfloorPrefab;
 
     // Start is called before the first frame update
     void Start()
@@ -31,19 +32,38 @@ public class ET_Floor : MonoBehaviour
         //Predetermined Floors
         if (CurrentIndexSpawn == 37)
         {
+            //Front half of the floors
             spawnPoint = transform.GetChild(17).transform;
             Instantiate(floorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(18).transform;
+            Instantiate(emptyfloorPrefab, spawnPoint.position, Quaternion.identity, transform);
             spawnPoint = transform.GetChild(19).transform;
             Instantiate(floorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            //Front middle path of floors
             spawnPoint = transform.GetChild(20).transform;
             Instantiate(floorPrefab, spawnPoint.position, Quaternion.identity, transform);
             spawnPoint = transform.GetChild(21).transform;
             Instantiate(floorPrefab, spawnPoint.position, Quaternion.identity, transform);
             spawnPoint = transform.GetChild(22).transform;
+            Instantiate(floorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            //Middle path of the floors
+            spawnPoint = transform.GetChild(23).transform;
+            Instantiate(floorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(24).transform;
+            Instantiate(floorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(25).transform;
+            Instantiate(floorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            //Middle bottom path of the floors
+            spawnPoint = transform.GetChild(26).transform;
+            Instantiate(floorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(27).transform;
+            Instantiate(floorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(28).transform;
             Instantiate(floorPrefab, spawnPoint.position, Quaternion.identity, transform);
         }
         else if (CurrentIndexSpawn == 75)
         {
+            //Front half of the floors
             spawnPoint = transform.GetChild(17).transform;
             Instantiate(floorPrefab, spawnPoint.position, Quaternion.identity, transform);
             spawnPoint = transform.GetChild(18).transform;
@@ -51,28 +71,152 @@ public class ET_Floor : MonoBehaviour
             spawnPoint = transform.GetChild(19).transform;
             Instantiate(floorPrefab, spawnPoint.position, Quaternion.identity, transform);
         }
-        else if (CurrentIndexSpawn == 92)
+        else if (CurrentIndexSpawn == 91)
         {
+            //Front half of the floors
+            spawnPoint = transform.GetChild(17).transform;
+            Instantiate(floorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(18).transform;
+            Instantiate(floorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(19).transform;
+            Instantiate(floorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            //Front middle path of floors
+            spawnPoint = transform.GetChild(20).transform;
+            Instantiate(emptyfloorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(21).transform;
+            Instantiate(emptyfloorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(22).transform;
+            Instantiate(emptyfloorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            //Middle path of the floors
+            spawnPoint = transform.GetChild(23).transform;
+            Instantiate(emptyfloorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(24).transform;
+            Instantiate(emptyfloorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(25).transform;
+            Instantiate(emptyfloorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            //Middle bottom path of the floors
+            spawnPoint = transform.GetChild(26).transform;
+            Instantiate(emptyfloorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(27).transform;
+            Instantiate(emptyfloorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(28).transform;
+            Instantiate(emptyfloorPrefab, spawnPoint.position, Quaternion.identity, transform);
+        }
+        else if (CurrentIndexSpawn == 110)
+        {
+            //Front half of the floors
+            spawnPoint = transform.GetChild(17).transform;
+            Instantiate(emptyfloorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(18).transform;
+            Instantiate(floorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(19).transform;
+            Instantiate(floorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            //Front middle path of floors
+            spawnPoint = transform.GetChild(20).transform;
+            Instantiate(emptyfloorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(21).transform;
+            Instantiate(emptyfloorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(22).transform;
+            Instantiate(floorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            //Middle path of the floors
+            spawnPoint = transform.GetChild(23).transform;
+            Instantiate(emptyfloorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(24).transform;
+            Instantiate(emptyfloorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(25).transform;
+            Instantiate(floorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            //Middle bottom path of the floors
+            spawnPoint = transform.GetChild(26).transform;
+            Instantiate(emptyfloorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(27).transform;
+            Instantiate(emptyfloorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(28).transform;
+            Instantiate(emptyfloorPrefab, spawnPoint.position, Quaternion.identity, transform);
+        }
+        else if (CurrentIndexSpawn == 111 || CurrentIndexSpawn == 115)
+        {
+            //Front middle path of floors
             spawnPoint = transform.GetChild(20).transform;
             Instantiate(floorPrefab, spawnPoint.position, Quaternion.identity, transform);
             spawnPoint = transform.GetChild(21).transform;
             Instantiate(floorPrefab, spawnPoint.position, Quaternion.identity, transform);
             spawnPoint = transform.GetChild(22).transform;
             Instantiate(floorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            //Middle path of the floors
+            spawnPoint = transform.GetChild(23).transform;
+            Instantiate(floorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(24).transform;
+            Instantiate(floorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(25).transform;
+            Instantiate(floorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            //Middle bottom path of the floors
+            spawnPoint = transform.GetChild(26).transform;
+            Instantiate(floorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(27).transform;
+            Instantiate(floorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(28).transform;
+            Instantiate(floorPrefab, spawnPoint.position, Quaternion.identity, transform);
+        }
+        else if (CurrentIndexSpawn == 114)
+        {
+            //Front half of the floors
+            spawnPoint = transform.GetChild(17).transform;
+            Instantiate(floorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(18).transform;
+            Instantiate(floorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(19).transform;
+            Instantiate(emptyfloorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            //Front middle path of floors
+            spawnPoint = transform.GetChild(20).transform;
+            Instantiate(floorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(21).transform;
+            Instantiate(emptyfloorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(22).transform;
+            Instantiate(emptyfloorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            //Middle path of the floors
+            spawnPoint = transform.GetChild(23).transform;
+            Instantiate(floorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(24).transform;
+            Instantiate(emptyfloorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(25).transform;
+            Instantiate(emptyfloorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            //Middle bottom path of the floors
+            spawnPoint = transform.GetChild(26).transform;
+            Instantiate(emptyfloorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(27).transform;
+            Instantiate(emptyfloorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(28).transform;
+            Instantiate(emptyfloorPrefab, spawnPoint.position, Quaternion.identity, transform);
         }
         else
         {
+            //Front half of the floors
             spawnPoint = transform.GetChild(17).transform;
             Instantiate(floorPrefab, spawnPoint.position, Quaternion.identity, transform);
             spawnPoint = transform.GetChild(18).transform;
             Instantiate(floorPrefab, spawnPoint.position, Quaternion.identity, transform);
             spawnPoint = transform.GetChild(19).transform;
             Instantiate(floorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            //Front middle path of floors
             spawnPoint = transform.GetChild(20).transform;
             Instantiate(floorPrefab, spawnPoint.position, Quaternion.identity, transform);
             spawnPoint = transform.GetChild(21).transform;
             Instantiate(floorPrefab, spawnPoint.position, Quaternion.identity, transform);
             spawnPoint = transform.GetChild(22).transform;
+            Instantiate(floorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            //Middle path of the floors
+            spawnPoint = transform.GetChild(23).transform;
+            Instantiate(floorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(24).transform;
+            Instantiate(floorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(25).transform;
+            Instantiate(floorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            //Middle bottom path of the floors
+            spawnPoint = transform.GetChild(26).transform;
+            Instantiate(floorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(27).transform;
+            Instantiate(floorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(28).transform;
             Instantiate(floorPrefab, spawnPoint.position, Quaternion.identity, transform);
         }
     }

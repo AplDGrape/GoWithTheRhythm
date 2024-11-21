@@ -342,7 +342,27 @@ public class ET_Obstacles : MonoBehaviour
             spawnPoint = transform.GetChild(4).transform;
             Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
         }
-        else if (CurrentNodeSpawn == 84 || CurrentNodeSpawn == 88 || CurrentNodeSpawn == 92 || CurrentNodeSpawn == 94 || CurrentNodeSpawn == 96 || CurrentNodeSpawn == 100 || CurrentNodeSpawn == 104)
+        else if (CurrentNodeSpawn == 84)
+        {
+            spawnPoint = transform.GetChild(10).transform;
+            Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(16).transform;
+            Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(3).transform;
+            Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(15).transform;
+            Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(2).transform;
+            Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
+        }
+        else if (CurrentNodeSpawn == 86 || CurrentNodeSpawn == 87 || CurrentNodeSpawn == 90 || CurrentNodeSpawn == 98 || CurrentNodeSpawn == 103)
+        {
+            spawnPoint = transform.GetChild(4).transform;
+            Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(9).transform;
+            Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
+        }
+        else if (CurrentNodeSpawn == 88)
         {
             spawnPoint = transform.GetChild(4).transform;
             Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
@@ -355,12 +375,59 @@ public class ET_Obstacles : MonoBehaviour
             spawnPoint = transform.GetChild(8).transform;
             Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
         }
-        else if (CurrentNodeSpawn == 86 || CurrentNodeSpawn == 87 || CurrentNodeSpawn == 90 || CurrentNodeSpawn == 91 || CurrentNodeSpawn == 98 || CurrentNodeSpawn == 99 || CurrentNodeSpawn == 102 || CurrentNodeSpawn == 103)
+        else if (CurrentNodeSpawn == 91 || CurrentNodeSpawn == 99 || CurrentNodeSpawn == 102)
+        {
+            spawnPoint = transform.GetChild(10).transform;
+            Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(3).transform;
+            Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
+        }
+        else if (CurrentNodeSpawn == 92)
         {
             spawnPoint = transform.GetChild(4).transform;
             Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(12).transform;
+            Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
             spawnPoint = transform.GetChild(9).transform;
             Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(15).transform;
+            Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(2).transform;
+            Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
+        }
+        else if (CurrentNodeSpawn == 94)
+        {
+            spawnPoint = transform.GetChild(4).transform;
+            Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(12).transform;
+            Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(6).transform;
+            Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(11).transform;
+            Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(2).transform;
+            Instantiate(obstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(5).transform;
+            Instantiate(obstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(8).transform;
+            Instantiate(obstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
+        }
+        else if (CurrentNodeSpawn == 96)
+        {
+            spawnPoint = transform.GetChild(10).transform;
+            Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(16).transform;
+            Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(6).transform;
+            Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(15).transform;
+            Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(2).transform;
+            Instantiate(obstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(5).transform;
+            Instantiate(obstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(8).transform;
+            Instantiate(obstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
         }
         //Chorus End
         else if (CurrentNodeSpawn == 106 || CurrentNodeSpawn == 107 || CurrentNodeSpawn == 118 || CurrentNodeSpawn == 119)

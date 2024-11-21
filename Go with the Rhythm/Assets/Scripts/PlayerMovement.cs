@@ -63,7 +63,7 @@ public class PlayerMovement : MonoBehaviour
         {
             animator.SetBool("isJumping", true);
         }
-        if (transform.position.y < -5)
+        if (transform.position.y < -1.5)
         {
             Death();
         }
