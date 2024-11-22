@@ -32,9 +32,9 @@ public class ET_GroundSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        for (int i = 0; i < 10; i++)
+        for (int k = 0; k < 10; k++)
         {
-            if (i < 10)
+            if (k < 10)
             {
                 SpawnTile(false);
             }
