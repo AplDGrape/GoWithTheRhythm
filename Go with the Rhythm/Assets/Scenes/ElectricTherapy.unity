@@ -3528,6 +3528,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1015459548}
     m_Modifications:
+    - target: {fileID: 829817934381838311, guid: 917a937377cd7f54d9b852d21d06d9c3, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -583527051, guid: b34d160e4a991b746a437417d7b61335, type: 3}
+    - target: {fileID: 829817934381838311, guid: 917a937377cd7f54d9b852d21d06d9c3, type: 3}
+      propertyPath: m_FillAmount
+      value: 0.194
+      objectReference: {fileID: 0}
     - target: {fileID: 1921770789639089655, guid: 917a937377cd7f54d9b852d21d06d9c3, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3558,11 +3566,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1921770789639089655, guid: 917a937377cd7f54d9b852d21d06d9c3, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 22.00941
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 1921770789639089655, guid: 917a937377cd7f54d9b852d21d06d9c3, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 20.6289
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 1921770789639089655, guid: 917a937377cd7f54d9b852d21d06d9c3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3594,11 +3602,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1921770789639089655, guid: 917a937377cd7f54d9b852d21d06d9c3, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 11.62
+      value: 12.57
       objectReference: {fileID: 0}
     - target: {fileID: 1921770789639089655, guid: 917a937377cd7f54d9b852d21d06d9c3, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -13.6
+      value: -25
       objectReference: {fileID: 0}
     - target: {fileID: 1921770789639089655, guid: 917a937377cd7f54d9b852d21d06d9c3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3612,9 +3620,41 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2372109576691743656, guid: 917a937377cd7f54d9b852d21d06d9c3, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -724261501, guid: b34d160e4a991b746a437417d7b61335, type: 3}
+    - target: {fileID: 2372109576691743656, guid: 917a937377cd7f54d9b852d21d06d9c3, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3097838097096964501, guid: 917a937377cd7f54d9b852d21d06d9c3, type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3097838097096964501, guid: 917a937377cd7f54d9b852d21d06d9c3, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -583527051, guid: b34d160e4a991b746a437417d7b61335, type: 3}
+    - target: {fileID: 3097838097096964501, guid: 917a937377cd7f54d9b852d21d06d9c3, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3097838097096964501, guid: 917a937377cd7f54d9b852d21d06d9c3, type: 3}
+      propertyPath: m_PixelsPerUnitMultiplier
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4170103696925047005, guid: 917a937377cd7f54d9b852d21d06d9c3, type: 3}
       propertyPath: m_Name
       value: Linear Progress Bar
+      objectReference: {fileID: 0}
+    - target: {fileID: 5843841951922210718, guid: 917a937377cd7f54d9b852d21d06d9c3, type: 3}
+      propertyPath: current
+      value: 11.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7503299516635544496, guid: 917a937377cd7f54d9b852d21d06d9c3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 917a937377cd7f54d9b852d21d06d9c3, type: 3}
