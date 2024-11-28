@@ -20,6 +20,11 @@ public class LevelSelectScript : MonoBehaviour
         
     }
 
+    public void backScene()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+
     public void ChangeScene()
     {
         SceneManager.LoadScene(levelName);
