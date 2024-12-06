@@ -14,6 +14,9 @@ public class GameOverMenu : MonoBehaviour
 
     public GameObject[] stars;
 
+    //Level is complete bool
+    public static bool ETComplete = false;
+
     // Update is called once per frame
     void Update()
     {
@@ -47,6 +50,7 @@ public class GameOverMenu : MonoBehaviour
 
         Time.timeScale = 0f;
         AudioManager.SongEnd = true;
+        ETComplete = true;
     }
 
     //Restarts the game/round

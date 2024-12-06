@@ -392,6 +392,8 @@
 "Assets/Scripts/GroundSpawner.cs"
 "Assets/Scripts/GroundTile.cs"
 "Assets/Scripts/LevelSelectScript.cs"
+"Assets/Scripts/LevelSelect_Music.cs"
+"Assets/Scripts/LevelSelect_MusicManager.cs"
 "Assets/Scripts/MainMenu.cs"
 "Assets/Scripts/Obstacle.cs"
 "Assets/Scripts/PauseMenu.cs"
