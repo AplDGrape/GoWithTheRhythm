@@ -23,7 +23,7 @@ public class ET_Floor : MonoBehaviour
 
     public void SpawnFloor(int CurrentIndexSpawn)
     {
-        //Choose which obstacle to spawn
+        //Choose which floor to spawn
         GameObject floorToSpawn = floorPrefab;
 
         //Choose a point to spawn obstacle
@@ -374,13 +374,13 @@ public class ET_Floor : MonoBehaviour
             spawnPoint = transform.GetChild(28).transform;
             Instantiate(emptyfloorPrefab, spawnPoint.position, Quaternion.identity, transform);
         }
-        else if (CurrentIndexSpawn == 132)
+        else if (CurrentIndexSpawn == 132 || CurrentIndexSpawn == 133)
         {
             //Front half of the floors
             spawnPoint = transform.GetChild(17).transform;
             Instantiate(emptyfloorPrefab, spawnPoint.position, Quaternion.identity, transform);
             spawnPoint = transform.GetChild(18).transform;
-            Instantiate(floorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            Instantiate(emptyfloorPrefab, spawnPoint.position, Quaternion.identity, transform);
             spawnPoint = transform.GetChild(19).transform;
             Instantiate(emptyfloorPrefab, spawnPoint.position, Quaternion.identity, transform);
             //Front middle path of floors

@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class ET_Obstacles : MonoBehaviour
@@ -25,7 +26,7 @@ public class ET_Obstacles : MonoBehaviour
         Destroy(gameObject, 2);
     }
 
-    public void SpawnObstacle(int CurrentNodeSpawn)
+    public IEnumerator SpawnObstacle(int CurrentNodeSpawn)
     {
         //Choose which obstacle to spawn
         GameObject obstacleToSpawn = obstaclePrefab;
@@ -34,6 +35,9 @@ public class ET_Obstacles : MonoBehaviour
         //Choose random point to spawn obstacle
         int obstacleSpawnIndex = Random.Range(2, 16);
         Transform spawnPoint = transform.GetChild(obstacleSpawnIndex).transform;
+
+        //Delay Spawn
+        yield return new WaitForSeconds(10);
 
         //Predetermined Spawned obstacles
         if (CurrentNodeSpawn == 7)
@@ -74,7 +78,7 @@ public class ET_Obstacles : MonoBehaviour
         {
             spawnPoint = transform.GetChild(5).transform;
             Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
-            spawnPoint = transform.GetChild(3).transform;
+            spawnPoint = transform.GetChild(29).transform;
             Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
             spawnPoint = transform.GetChild(4).transform;
             Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
@@ -89,7 +93,7 @@ public class ET_Obstacles : MonoBehaviour
         {
             spawnPoint = transform.GetChild(5).transform;
             Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
-            spawnPoint = transform.GetChild(9).transform;
+            spawnPoint = transform.GetChild(30).transform;
             Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
             spawnPoint = transform.GetChild(10).transform;
             Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
@@ -154,7 +158,7 @@ public class ET_Obstacles : MonoBehaviour
         {
             spawnPoint = transform.GetChild(5).transform;
             Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
-            spawnPoint = transform.GetChild(3).transform;
+            spawnPoint = transform.GetChild(29).transform;
             Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
             spawnPoint = transform.GetChild(4).transform;
             Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
@@ -255,7 +259,7 @@ public class ET_Obstacles : MonoBehaviour
             Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
             spawnPoint = transform.GetChild(12).transform;
             Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
-            spawnPoint = transform.GetChild(3).transform;
+            spawnPoint = transform.GetChild(29).transform;
             Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
             spawnPoint = transform.GetChild(11).transform;
             Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
@@ -268,7 +272,7 @@ public class ET_Obstacles : MonoBehaviour
             Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
             spawnPoint = transform.GetChild(14).transform;
             Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
-            spawnPoint = transform.GetChild(6).transform;
+            spawnPoint = transform.GetChild(29).transform;
             Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
             spawnPoint = transform.GetChild(13).transform;
             Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
@@ -281,7 +285,7 @@ public class ET_Obstacles : MonoBehaviour
             Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
             spawnPoint = transform.GetChild(16).transform;
             Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
-            spawnPoint = transform.GetChild(9).transform;
+            spawnPoint = transform.GetChild(30).transform;
             Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
             spawnPoint = transform.GetChild(15).transform;
             Instantiate(ElectricObstaclePrefab, spawnPoint.position, Quaternion.identity, transform);

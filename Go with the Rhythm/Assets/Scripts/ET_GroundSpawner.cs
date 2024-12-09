@@ -18,13 +18,16 @@ public class ET_GroundSpawner : MonoBehaviour
         //Whether to spawn data/items on the tile
         if (spawnData)
         {
-            temp.GetComponent<ET_Obstacles>().SpawnObstacle(i);
+            StartCoroutine(temp.GetComponent<ET_Obstacles>().SpawnObstacle(i));
 
             i++;
         }
 
         //Spawn the floors
         temp.GetComponent<ET_Floor>().SpawnFloor(j);
+
+        //Spawn the walls
+        temp.GetComponent<ET_Wall>().SpawnWall(j);
 
         j++;
     }
