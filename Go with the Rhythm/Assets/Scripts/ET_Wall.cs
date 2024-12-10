@@ -6,9 +6,13 @@ public class ET_Wall : MonoBehaviour
 {
     ET_GroundSpawner groundSpawner;
 
-    //Wall
+    //Walls
+    [SerializeField] GameObject wallRight;
+    [SerializeField] GameObject wallLeft;
     [SerializeField] GameObject wallPrefab1;
-    [SerializeField] GameObject wallPrefab2;
+
+    //Decoratives
+    [SerializeField] GameObject lightDeco1;
 
     // Start is called before the first frame update
     void Start()
@@ -31,17 +35,33 @@ public class ET_Wall : MonoBehaviour
         Transform spawnPoint = transform.GetChild(4).transform;
 
         //Predetermined Walls
-        if (CurrentIndexSpawn == 42)
+        if (CurrentIndexSpawn == 9)
         {
             //Right Wall
             spawnPoint = transform.GetChild(31).transform;
-            Instantiate(wallPrefab2, spawnPoint.position, Quaternion.identity, transform);
+            Instantiate(wallRight, spawnPoint.position, Quaternion.identity, transform);
+            //Left Wall
+            spawnPoint = transform.GetChild(32).transform;
+            Instantiate(wallLeft, spawnPoint.position, Quaternion.identity, transform);
+
+            //Decoratives
+            spawnPoint = transform.GetChild(33).transform;
+            Instantiate(lightDeco1, spawnPoint.position, Quaternion.identity, transform);
+        }
+        else if (CurrentIndexSpawn == 42)
+        {
+            //Right Wall 2
+            spawnPoint = transform.GetChild(31).transform;
+            Instantiate(wallPrefab1, spawnPoint.position, Quaternion.identity, transform);
         }
         else
         {
             //Right Wall
             spawnPoint = transform.GetChild(31).transform;
-            Instantiate(wallToSpawn, spawnPoint.position, Quaternion.identity, transform);
+            Instantiate(wallRight, spawnPoint.position, Quaternion.identity, transform);
+            //Left Wall
+            spawnPoint = transform.GetChild(32).transform;
+            Instantiate(wallLeft, spawnPoint.position, Quaternion.identity, transform);
         }
     }
 }
