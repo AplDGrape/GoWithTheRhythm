@@ -428,6 +428,37 @@ Transform:
   m_Father: {fileID: 1321827928272241130}
   m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2368679824112977349
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8669373738612466328}
+  m_Layer: 7
+  m_Name: Wall_LeftUp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8669373738612466328
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2368679824112977349}
+  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0.00000058114523}
+  m_LocalPosition: {x: -6.0000057, y: 2.5, z: -5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1321827928272241130}
+  m_RootOrder: 33
+  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
 --- !u!1 &2532195252343608178
 GameObject:
   m_ObjectHideFlags: 0
@@ -459,7 +490,7 @@ Transform:
   - {fileID: 7585580834208895484}
   - {fileID: 4342668593851090859}
   m_Father: {fileID: 1321827928272241130}
-  m_RootOrder: 34
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2551774144561295265
 GameObject:
@@ -491,6 +522,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1321827928272241130}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2621532572575623664
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3827446394924830726}
+  m_Layer: 7
+  m_Name: Wall_LeftDeco_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3827446394924830726
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2621532572575623664}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.5, y: 4, z: -5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1321827928272241130}
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3337231459862633015
 GameObject:
@@ -609,7 +671,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4192165577565628456}
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0.00000058114523}
-  m_LocalPosition: {x: -6, y: 1, z: 0.0000009536743}
+  m_LocalPosition: {x: -6, y: 1, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -645,7 +707,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1321827928272241130}
-  m_RootOrder: 33
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5473035080880607603
 GameObject:
@@ -929,7 +991,9 @@ Transform:
   - {fileID: 803155895842775356}
   - {fileID: 4822787614318756539}
   - {fileID: 3519539868076482510}
+  - {fileID: 8669373738612466328}
   - {fileID: 154848863560433133}
+  - {fileID: 3827446394924830726}
   - {fileID: 7890908665338232997}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -992,6 +1056,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wallRight: {fileID: 1888606483790569837, guid: e7ecfff0e84a3804199bf174245c1e0b, type: 3}
   wallLeft: {fileID: 8290871580714704754, guid: 6dc7d4039f9ccea499983458f76de695, type: 3}
+  wallUPRight: {fileID: 2114548259428523948, guid: a9f99f47a46cf7346aeec417ced02277, type: 3}
+  wallUPLeft: {fileID: 5785468440950624967, guid: 350d33f99a36c214ab0122b9b7154461, type: 3}
   wallPrefab1: {fileID: 1888606483790569837, guid: e7ecfff0e84a3804199bf174245c1e0b, type: 3}
   lightDeco1: {fileID: 6805579220265166762, guid: eb55940eaeeca4b40803be3dc15cdfe0, type: 3}
 --- !u!1 &7053498346120379409

@@ -9,6 +9,8 @@ public class ET_Wall : MonoBehaviour
     //Walls
     [SerializeField] GameObject wallRight;
     [SerializeField] GameObject wallLeft;
+    [SerializeField] GameObject wallUPRight;
+    [SerializeField] GameObject wallUPLeft;
     [SerializeField] GameObject wallPrefab1;
 
     //Decoratives
@@ -45,14 +47,30 @@ public class ET_Wall : MonoBehaviour
             Instantiate(wallLeft, spawnPoint.position, Quaternion.identity, transform);
 
             //Decoratives
-            spawnPoint = transform.GetChild(33).transform;
+            spawnPoint = transform.GetChild(34).transform;
+            Instantiate(lightDeco1, spawnPoint.position, Quaternion.identity, transform);
+        }
+        else if (CurrentIndexSpawn == 11)
+        {
+            //Right Wall
+            spawnPoint = transform.GetChild(31).transform;
+            Instantiate(wallRight, spawnPoint.position, Quaternion.identity, transform);
+            //Left Wall
+            spawnPoint = transform.GetChild(32).transform;
+            Instantiate(wallLeft, spawnPoint.position, Quaternion.identity, transform);
+
+            //Decoratives
+            spawnPoint = transform.GetChild(35).transform;
             Instantiate(lightDeco1, spawnPoint.position, Quaternion.identity, transform);
         }
         else if (CurrentIndexSpawn == 42)
         {
             //Right Wall 2
             spawnPoint = transform.GetChild(31).transform;
-            Instantiate(wallPrefab1, spawnPoint.position, Quaternion.identity, transform);
+            Instantiate(wallUPRight, spawnPoint.position, Quaternion.identity, transform);
+            //Left Wall 2
+            spawnPoint = transform.GetChild(33).transform;
+            Instantiate(wallUPLeft, spawnPoint.position, Quaternion.identity, transform);
         }
         else
         {
