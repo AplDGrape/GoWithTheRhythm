@@ -37,7 +37,7 @@ public class ET_Wall : MonoBehaviour
         Transform spawnPoint = transform.GetChild(4).transform;
 
         //Predetermined Walls
-        if (CurrentIndexSpawn == 9)
+        if (CurrentIndexSpawn == 9 || CurrentIndexSpawn == 10)
         {
             //Right Wall
             spawnPoint = transform.GetChild(31).transform;
@@ -47,10 +47,11 @@ public class ET_Wall : MonoBehaviour
             Instantiate(wallLeft, spawnPoint.position, Quaternion.identity, transform);
 
             //Decoratives
+            //R
             spawnPoint = transform.GetChild(34).transform;
             Instantiate(lightDeco1, spawnPoint.position, Quaternion.identity, transform);
         }
-        else if (CurrentIndexSpawn == 11)
+        else if (CurrentIndexSpawn == 11 || CurrentIndexSpawn == 12)
         {
             //Right Wall
             spawnPoint = transform.GetChild(31).transform;
@@ -60,7 +61,57 @@ public class ET_Wall : MonoBehaviour
             Instantiate(wallLeft, spawnPoint.position, Quaternion.identity, transform);
 
             //Decoratives
+            //R
+            spawnPoint = transform.GetChild(34).transform;
+            Instantiate(lightDeco1, spawnPoint.position, Quaternion.identity, transform);
+            //L
+            spawnPoint = transform.GetChild(37).transform;
+            Instantiate(lightDeco1, spawnPoint.position, Quaternion.identity, transform);
+        }
+        else if (CurrentIndexSpawn == 13 || CurrentIndexSpawn == 14)
+        {
+            //Right Wall
+            spawnPoint = transform.GetChild(31).transform;
+            Instantiate(wallRight, spawnPoint.position, Quaternion.identity, transform);
+            //Left Wall
+            spawnPoint = transform.GetChild(32).transform;
+            Instantiate(wallLeft, spawnPoint.position, Quaternion.identity, transform);
+
+            //Decoratives
+            //R
+            spawnPoint = transform.GetChild(34).transform;
+            Instantiate(lightDeco1, spawnPoint.position, Quaternion.identity, transform);
             spawnPoint = transform.GetChild(35).transform;
+            Instantiate(lightDeco1, spawnPoint.position, Quaternion.identity, transform);
+            //L
+            spawnPoint = transform.GetChild(37).transform;
+            Instantiate(lightDeco1, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(38).transform;
+            Instantiate(lightDeco1, spawnPoint.position, Quaternion.identity, transform);
+        }
+        else if (CurrentIndexSpawn >= 15 && CurrentIndexSpawn <= 41)
+        {
+            //Right Wall
+            spawnPoint = transform.GetChild(31).transform;
+            Instantiate(wallRight, spawnPoint.position, Quaternion.identity, transform);
+            //Left Wall
+            spawnPoint = transform.GetChild(32).transform;
+            Instantiate(wallLeft, spawnPoint.position, Quaternion.identity, transform);
+
+            //Decoratives
+            //R
+            spawnPoint = transform.GetChild(34).transform;
+            Instantiate(lightDeco1, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(35).transform;
+            Instantiate(lightDeco1, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(36).transform;
+            Instantiate(lightDeco1, spawnPoint.position, Quaternion.identity, transform);
+            //L
+            spawnPoint = transform.GetChild(37).transform;
+            Instantiate(lightDeco1, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(38).transform;
+            Instantiate(lightDeco1, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(39).transform;
             Instantiate(lightDeco1, spawnPoint.position, Quaternion.identity, transform);
         }
         else if (CurrentIndexSpawn == 42)
