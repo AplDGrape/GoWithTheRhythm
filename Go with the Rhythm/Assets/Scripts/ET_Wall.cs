@@ -11,6 +11,8 @@ public class ET_Wall : MonoBehaviour
     [SerializeField] GameObject wallLeft;
     [SerializeField] GameObject wallUPRight;
     [SerializeField] GameObject wallUPLeft;
+    [SerializeField] GameObject wallChorusR;
+    [SerializeField] GameObject wallChorusL;
     [SerializeField] GameObject wallPrefab1;
 
     //Decoratives
@@ -122,6 +124,15 @@ public class ET_Wall : MonoBehaviour
             //Left Wall 2
             spawnPoint = transform.GetChild(33).transform;
             Instantiate(wallUPLeft, spawnPoint.position, Quaternion.identity, transform);
+        }
+        else if (CurrentIndexSpawn >= 43 && CurrentIndexSpawn <= 66)
+        {
+            //Right Wall 2
+            spawnPoint = transform.GetChild(40).transform;
+            Instantiate(wallChorusR, spawnPoint.position, Quaternion.identity, transform);
+            //Left Wall 2
+            spawnPoint = transform.GetChild(41).transform;
+            Instantiate(wallChorusL, spawnPoint.position, Quaternion.identity, transform);
         }
         else
         {
