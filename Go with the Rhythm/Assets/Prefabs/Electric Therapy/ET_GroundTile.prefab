@@ -57,7 +57,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 538269871272154319}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -2, z: -5}
+  m_LocalPosition: {x: 0, y: -3, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -452,7 +452,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2368679824112977349}
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0.00000058114523}
-  m_LocalPosition: {x: -6.0000057, y: 2.5, z: -5}
+  m_LocalPosition: {x: -5, y: 1, z: -0.0000009536743}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1170,7 +1170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6b697ce30a3caf498dc4844d4e883a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  floorPrefab: {fileID: 6749162121507979588, guid: 6b267414aa2d2fb4eb53b217600e2669, type: 3}
+  floorPrefab: {fileID: 6749162121507979588, guid: b1cc44e8fcc7f9e4e934d253363ea798, type: 3}
   emptyfloorPrefab: {fileID: 6749162121507979588, guid: 263379dd0ac385646a58df179f6c29b0, type: 3}
 --- !u!114 &362421822249086105
 MonoBehaviour:
@@ -1186,10 +1186,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wallRight: {fileID: 1888606483790569837, guid: e7ecfff0e84a3804199bf174245c1e0b, type: 3}
   wallLeft: {fileID: 8290871580714704754, guid: 6dc7d4039f9ccea499983458f76de695, type: 3}
-  wallUPRight: {fileID: 2114548259428523948, guid: a9f99f47a46cf7346aeec417ced02277, type: 3}
-  wallUPLeft: {fileID: 5785468440950624967, guid: 350d33f99a36c214ab0122b9b7154461, type: 3}
+  wallUPRight: {fileID: 6997080970163564942, guid: 3f1eba5187f0a6845974adca40317ba4, type: 3}
+  wallUPLeft: {fileID: 1777773357333477133, guid: a8d948b998c4e3846bb832be3fce7474, type: 3}
   wallChorusR: {fileID: 3184024972860615538, guid: 9b97d442f9aea504dab2b88e1e1203f7, type: 3}
   wallChorusL: {fileID: 4785585974324804824, guid: bcfbc84fdc9148f4db4687fd79c3a8d3, type: 3}
+  wallDOWNRight: {fileID: 2864536500964269659, guid: 6894d314f13dc5b43925f9453346bf6b, type: 3}
+  wallDOWNLeft: {fileID: 5591797267598986819, guid: ae74a524ce47ef14ca3147c60e69c12a, type: 3}
   wallPrefab1: {fileID: 1888606483790569837, guid: e7ecfff0e84a3804199bf174245c1e0b, type: 3}
   lightDeco1: {fileID: 5524526194836631305, guid: e4e08a49b98417c4ab02cd84e39c64f4, type: 3}
 --- !u!1 &7053498346120379409
@@ -1679,7 +1681,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 4eef011fbe51b914bbf967c683b7efae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

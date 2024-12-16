@@ -70,6 +70,27 @@ public class ET_Floor : MonoBehaviour
             Instantiate(floorPrefab, spawnPoint.position, Quaternion.identity, transform);
             spawnPoint = transform.GetChild(19).transform;
             Instantiate(floorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            //Front middle path of floors
+            spawnPoint = transform.GetChild(20).transform;
+            Instantiate(emptyfloorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(21).transform;
+            Instantiate(emptyfloorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(22).transform;
+            Instantiate(emptyfloorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            //Middle path of the floors
+            spawnPoint = transform.GetChild(23).transform;
+            Instantiate(emptyfloorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(24).transform;
+            Instantiate(emptyfloorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(25).transform;
+            Instantiate(emptyfloorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            //Middle bottom path of the floors
+            spawnPoint = transform.GetChild(26).transform;
+            Instantiate(emptyfloorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(27).transform;
+            Instantiate(emptyfloorPrefab, spawnPoint.position, Quaternion.identity, transform);
+            spawnPoint = transform.GetChild(28).transform;
+            Instantiate(emptyfloorPrefab, spawnPoint.position, Quaternion.identity, transform);
         }
         else if (CurrentIndexSpawn == 91)
         {
