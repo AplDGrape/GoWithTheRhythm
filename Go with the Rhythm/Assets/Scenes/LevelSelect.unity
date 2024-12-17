@@ -1169,6 +1169,8 @@ MonoBehaviour:
   levelPagesRect: {fileID: 1718889788}
   tweenTime: 1
   tweenType: 4
+  prevBtn: {fileID: 982655319}
+  nextBtn: {fileID: 584957589}
 --- !u!114 &1315395796
 MonoBehaviour:
   m_ObjectHideFlags: 0

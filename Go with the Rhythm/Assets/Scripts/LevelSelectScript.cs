@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class LevelSelectScript : MonoBehaviour, IEndDragHandler
 {
@@ -18,6 +19,9 @@ public class LevelSelectScript : MonoBehaviour, IEndDragHandler
     [SerializeField] float tweenTime;
     [SerializeField] LeanTweenType tweenType;
     float dragThreshould;
+
+    [SerializeField] Button prevBtn;
+    [SerializeField] Button nextBtn;
 
     // Start is called before the first frame update
     void Start()
@@ -36,6 +40,8 @@ public class LevelSelectScript : MonoBehaviour, IEndDragHandler
         currentPage = 1;
         targetPos = levelPagesRect.localPosition;
         dragThreshould = Screen.width / 15;
+
+        UpdateArrowButton();
     }
 
     public void Next()
@@ -61,6 +67,7 @@ public class LevelSelectScript : MonoBehaviour, IEndDragHandler
     void MovePage()
     {
         levelPagesRect.LeanMoveLocal(targetPos, tweenTime).setEase(tweenType);
+        UpdateArrowButton();
     }
 
     public void backScene()
@@ -71,6 +78,29 @@ public class LevelSelectScript : MonoBehaviour, IEndDragHandler
     public void ElectricTherapyScene()
     {
         SceneManager.LoadScene("ElectricTherapy");
+    }
+
+    void UpdateArrowButton()
+    {
+        nextBtn.interactable = true;
+        prevBtn.interactable = true;
+        if (currentPage == 1)
+        {
+            prevBtn.interactable = false;
+
+            if (GameOverMenu.ETComplete == true)
+            {
+                nextBtn.interactable = true;
+            }
+            else
+            {
+                nextBtn.interactable = false;
+            }
+        }
+        else if (currentPage == maxPage)
+        {
+            nextBtn.interactable = false;
+        }
     }
 
     public void OnEndDrag(PointerEventData eventData)

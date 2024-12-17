@@ -24,6 +24,7 @@ public class GameOverMenu : MonoBehaviour
         if (GameisOver)
         {
             GameOver();
+            //LevelSelectStatus();
         }
         else
         {
@@ -50,7 +51,7 @@ public class GameOverMenu : MonoBehaviour
 
         Time.timeScale = 0f;
         AudioManager.SongEnd = true;
-        ETComplete = true;
+        LevelSelectStatus();
     }
 
     //Restarts the game/round
@@ -68,6 +69,12 @@ public class GameOverMenu : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
         GameOverUI.SetActive(false);
         AudioManager.SongEnd = false;
+        Time.timeScale = 1f;
+    }
+
+    void LevelSelectStatus()
+    {
+        ETComplete = true;
         Time.timeScale = 1f;
     }
 
