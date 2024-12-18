@@ -400,6 +400,7 @@
 "Assets/Scripts/PauseMenu.cs"
 "Assets/Scripts/PlayerMovement.cs"
 "Assets/Scripts/ProgressBar.cs"
+"Assets/Scripts/SettingsMenu.cs"
 "Assets/Scripts/VoidFollow.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"
