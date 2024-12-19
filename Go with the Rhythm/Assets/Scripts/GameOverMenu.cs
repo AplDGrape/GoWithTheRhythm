@@ -23,12 +23,14 @@ public class GameOverMenu : MonoBehaviour
         GameisOver = AudioManager.SongEnd;
         if (GameisOver)
         {
-            GameOver();
+            Resume();
+            //GameOver();
             //LevelSelectStatus();
         }
         else
         {
-            Resume();
+            GameOver();
+            //Resume();
         }
     }
 
@@ -50,32 +52,32 @@ public class GameOverMenu : MonoBehaviour
         Setup(points);
 
         Time.timeScale = 0f;
-        AudioManager.SongEnd = true;
+        //AudioManager.SongEnd = true;
         LevelSelectStatus();
     }
 
     //Restarts the game/round
     public void Restart()
     {
-        SceneManager.LoadScene("ElectricTherapy");
         GameOverUI.SetActive(false);
         AudioManager.SongEnd = false;
         Time.timeScale = 1f;
+        SceneManager.LoadScene("ElectricTherapy");
     }
 
     //Go to main menu
     public void LoadMenu()
     {
-        SceneManager.LoadScene("MainMenu");
-        GameOverUI.SetActive(false);
-        AudioManager.SongEnd = false;
         Time.timeScale = 1f;
+        GameOverUI.SetActive(false);
+        AudioManager.SongEnd = true;
+        SceneManager.LoadScene("MainMenu");
     }
 
     void LevelSelectStatus()
     {
         ETComplete = true;
-        Time.timeScale = 1f;
+        //Time.timeScale = 1f;
     }
 
     //Set ups the scores/stars

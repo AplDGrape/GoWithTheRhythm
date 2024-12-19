@@ -2,14 +2,36 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.UI;
 
 public class SettingsMenu : MonoBehaviour
 {
-    public AudioMixer audioMixer;
+    [SerializeField] public AudioMixer audioMixer;
+    [SerializeField] private Slider musicSlider;
 
-    public void SetVolume(float volume)
+    private void Start()
     {
-        audioMixer.SetFloat("Volume", volume);
+        if (PlayerPrefs.HasKey("musicVolume"))
+        {
+            LoadVolume();
+        }
+        else
+        {
+            SetVolume();
+        }
     }
 
+    public void SetVolume()
+    {
+        float volume = musicSlider.value;
+        audioMixer.SetFloat("Volume", Mathf.Log10(volume)*20);
+        PlayerPrefs.SetFloat("musicVolume", volume);
+    }
+
+    private void LoadVolume()
+    {
+        musicSlider.value = PlayerPrefs.GetFloat("musicVolume");
+
+        SetVolume();
+    }
 }

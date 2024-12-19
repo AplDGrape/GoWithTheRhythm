@@ -1,7 +1,10 @@
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class LevelSelect_MusicManager : MonoBehaviour
 {
+    public AudioMixerGroup audioMixer;
+
     //Reference to music Clips
     public LevelSelect_Music[] musics;
 
@@ -16,6 +19,7 @@ public class LevelSelect_MusicManager : MonoBehaviour
         {
             m.source = gameObject.AddComponent<AudioSource>();
             m.source.clip = m.clip;
+            m.source.outputAudioMixerGroup = audioMixer;
         }
 
         SongCount = musics.Length;

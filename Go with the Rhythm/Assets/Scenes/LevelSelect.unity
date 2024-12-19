@@ -612,6 +612,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c74546c54c69c564e820f3d35046364f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioMixer: {fileID: 24300002, guid: 69500b125342bbc40a34f5aa7a9f7288, type: 2}
   musics:
   - musicID: Electric Therapy
     clip: {fileID: 8300000, guid: f73f2c67da4cee2458b257d9e78dc997, type: 3}

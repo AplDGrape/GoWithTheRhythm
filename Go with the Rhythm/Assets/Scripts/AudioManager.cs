@@ -46,8 +46,8 @@ public class AudioManager : MonoBehaviour
 
         if (timeStart >= musicSource.clip.length || PlayerMovement.alive == false)
         {
-            SongEnd = true;
-            Debug.Log("End");
+            SongEnd = false;
+            //Debug.Log("End");
             Time.timeScale = 0f;
             musicSource.Stop();
         }
@@ -61,7 +61,7 @@ public class AudioManager : MonoBehaviour
             {
                 Time.timeScale = 1;
             }
-            SongEnd = false;
+            SongEnd = true;
         }
         timescore = timeStart;
 
