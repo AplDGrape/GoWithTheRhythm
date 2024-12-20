@@ -24,13 +24,10 @@ public class GameOverMenu : MonoBehaviour
         if (GameisOver)
         {
             Resume();
-            //GameOver();
-            //LevelSelectStatus();
         }
         else
         {
             GameOver();
-            //Resume();
         }
     }
 
@@ -70,14 +67,13 @@ public class GameOverMenu : MonoBehaviour
     {
         Time.timeScale = 1f;
         GameOverUI.SetActive(false);
-        AudioManager.SongEnd = true;
+        //AudioManager.SongEnd = true;
         SceneManager.LoadScene("MainMenu");
     }
 
     void LevelSelectStatus()
     {
         ETComplete = true;
-        //Time.timeScale = 1f;
     }
 
     //Set ups the scores/stars

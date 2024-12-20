@@ -7,9 +7,6 @@ using UnityEngine.UI;
 
 public class LevelSelectScript : MonoBehaviour, IEndDragHandler
 {
-    //Get name of the level to select
-    public string levelName;
-
     [SerializeField] int maxPage;
     int currentPage;
     Vector3 targetPos;
@@ -32,7 +29,7 @@ public class LevelSelectScript : MonoBehaviour, IEndDragHandler
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void Awake()

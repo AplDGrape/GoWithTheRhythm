@@ -14,8 +14,11 @@ public class PlayerMovement : MonoBehaviour
 
     //Makes horizontal move faster than speed
     [SerializeField] public float horizontalMultiplier = 0.75f;
+    //Makes vertical move faster than speed
+    [SerializeField] public float verticalMultiplier = 0.75f;
 
     float horizontalInput;
+    float verticalInput;
 
     [SerializeField] float jumpForce = 300f;
     [SerializeField] LayerMask groundMask;
@@ -33,10 +36,12 @@ public class PlayerMovement : MonoBehaviour
 
         //variable = direction * speed * time
         Vector3 forwardMove = transform.forward * speed * Time.fixedDeltaTime;
+        //
+        //Vector3 forwardMovement = transform.forward * verticalInput * speed * Time.fixedDeltaTime * verticalMultiplier;
         //movement for left and right
         Vector3 horizontalMove = -(transform.right) * horizontalInput * speed * Time.fixedDeltaTime * horizontalMultiplier;
         //move position to a certain position
-        rb.MovePosition(rb.position + forwardMove + horizontalMove);
+        rb.MovePosition(rb.position + forwardMove /*+ forwardMovement*/ + horizontalMove);
     }
 
     // Update is called once per frame
@@ -44,6 +49,8 @@ public class PlayerMovement : MonoBehaviour
     {
         //Get key inputs for "left" and "right"
         horizontalInput = Input.GetAxis("Horizontal");
+        //Get key inputs for "up" and "down"
+        verticalInput = Input.GetAxis("Vertical");
 
         //Check if grounded
         float height = GetComponent<Collider>().bounds.size.y;

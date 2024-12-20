@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.UI;
+using TMPro;
 
 public class LevelSelect_MusicManager : MonoBehaviour
 {
@@ -8,9 +10,15 @@ public class LevelSelect_MusicManager : MonoBehaviour
     //Reference to music Clips
     public LevelSelect_Music[] musics;
 
+    public TextMeshProUGUI titleText;
+
     private string currentMusicID = "Electric Therapy";
     public int CurrentSong = 0;
     public int SongCount;
+
+    //Difficulty rating
+    public GameObject[] starsDiff;
+    public int difficultyRating;
 
     private void Awake()
     {
@@ -36,7 +44,6 @@ public class LevelSelect_MusicManager : MonoBehaviour
                 break;
             }
         }
-
 
         //Change currentmusicID
         currentMusicID = newMusicID;
@@ -103,6 +110,75 @@ public class LevelSelect_MusicManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        titleText.text = musics[CurrentSong].musicID;
+
+        CurDiff();
+
+        Difficulty(difficultyRating);
+    }
+
+    public void CurDiff()
+    {
+        if (CurrentSong == 0)
+        {
+            difficultyRating = 2;
+        }
+        else if (CurrentSong == 1)
+        {
+            difficultyRating = 3;
+        }
+        else if (CurrentSong == 2)
+        {
+            difficultyRating = 1;
+        }
+    }
+
+    public void Difficulty(int difficulty)
+    {
+        if (difficulty == 1)
+        {
+            starsDiff[0].SetActive(true);
+
+            starsDiff[1].SetActive(false);
+            starsDiff[2].SetActive(false);
+            starsDiff[3].SetActive(false);
+            starsDiff[4].SetActive(false);
+        }
+        else if (difficulty == 2)
+        {
+            starsDiff[1].SetActive(true);
+
+            starsDiff[0].SetActive(false);
+            starsDiff[2].SetActive(false);
+            starsDiff[3].SetActive(false);
+            starsDiff[4].SetActive(false);
+        }
+        else if (difficulty == 3)
+        {
+            starsDiff[2].SetActive(true);
+
+            starsDiff[0].SetActive(false);
+            starsDiff[1].SetActive(false);
+            starsDiff[3].SetActive(false);
+            starsDiff[4].SetActive(false);
+        }
+        else if (difficulty == 4)
+        {
+            starsDiff[3].SetActive(true);
+
+            starsDiff[0].SetActive(false);
+            starsDiff[1].SetActive(false);
+            starsDiff[2].SetActive(false);
+            starsDiff[4].SetActive(false);
+        }
+        else if (difficulty == 5)
+        {
+            starsDiff[4].SetActive(true);
+
+            starsDiff[0].SetActive(false);
+            starsDiff[1].SetActive(false);
+            starsDiff[2].SetActive(false);
+            starsDiff[3].SetActive(false);
+        }
     }
 }

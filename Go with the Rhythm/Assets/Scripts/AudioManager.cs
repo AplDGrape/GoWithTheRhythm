@@ -48,7 +48,6 @@ public class AudioManager : MonoBehaviour
         {
             SongEnd = false;
             //Debug.Log("End");
-            Time.timeScale = 0f;
             musicSource.Stop();
         }
         else
