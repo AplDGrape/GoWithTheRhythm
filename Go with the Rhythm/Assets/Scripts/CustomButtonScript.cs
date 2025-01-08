@@ -10,10 +10,4 @@ public class CustomButtonScript : MonoBehaviour
     {
         this.GetComponent<Image>().alphaHitTestMinimumThreshold = 0.1f;
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
