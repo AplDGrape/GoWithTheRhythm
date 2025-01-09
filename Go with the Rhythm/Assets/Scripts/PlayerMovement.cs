@@ -36,7 +36,7 @@ public class PlayerMovement : MonoBehaviour
 
         //variable = direction * speed * time
         Vector3 forwardMove = transform.forward * speed * Time.fixedDeltaTime;
-        //
+        
         //Vector3 forwardMovement = transform.forward * verticalInput * speed * Time.fixedDeltaTime * verticalMultiplier;
         //movement for left and right
         Vector3 horizontalMove = -(transform.right) * horizontalInput * speed * Time.fixedDeltaTime * horizontalMultiplier;

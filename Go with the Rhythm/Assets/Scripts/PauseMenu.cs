@@ -25,6 +25,7 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
+    //Resumes Game scene
     public void Resume ()
     {
         pauseMenuUI.SetActive(false);
@@ -32,6 +33,7 @@ public class PauseMenu : MonoBehaviour
         GameisPaused = false;
     }
 
+    //Pause game scene
     void Pause()
     {
         pauseMenuUI.SetActive(true);
@@ -39,6 +41,7 @@ public class PauseMenu : MonoBehaviour
         GameisPaused = true;
     }
 
+    //Go to Main Menu
     public void LoadMenu()
     {
         Time.timeScale = 1f;
@@ -46,6 +49,7 @@ public class PauseMenu : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
 
+    //Quit the game
     public void QuitGame()
     {
         Debug.Log("Quitting Game");

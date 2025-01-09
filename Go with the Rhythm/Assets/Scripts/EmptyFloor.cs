@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EmptyFloor : MonoBehaviour
 {
+    //Get PlayerMovement reference script
     PlayerMovement playerMovement;
 
     // Start is called before the first frame update
@@ -20,11 +21,5 @@ public class EmptyFloor : MonoBehaviour
             //Kills the player
             playerMovement.speed = 1f;
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

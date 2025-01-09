@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Obstacle : MonoBehaviour
 {
+    //Get reference to PlayerMovement script
     PlayerMovement playerMovement;
 
     // Start is called before the first frame update
@@ -20,11 +21,5 @@ public class Obstacle : MonoBehaviour
             //Kills the player
             playerMovement.Death();
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

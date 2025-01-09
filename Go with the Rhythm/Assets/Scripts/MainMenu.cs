@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    //Go to Level Select scene
     public void PlayGame()
     {
         //Get Next Scene
@@ -13,6 +14,7 @@ public class MainMenu : MonoBehaviour
 
     }
 
+    //Quits the game
     public void QuitGame()
     {
         Debug.Log("Quit!");

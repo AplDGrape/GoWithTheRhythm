@@ -71,6 +71,7 @@ public class GameOverMenu : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
 
+    //Check game status (temp)
     void LevelSelectStatus()
     {
         ETComplete = true;

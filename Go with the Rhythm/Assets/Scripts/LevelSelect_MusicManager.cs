@@ -59,6 +59,7 @@ public class LevelSelect_MusicManager : MonoBehaviour
         }
     }
 
+    //Unlock Level song status (temp)
     public void NextSongCondition()
     {
         if (GameOverMenu.ETComplete)
@@ -117,6 +118,7 @@ public class LevelSelect_MusicManager : MonoBehaviour
         Difficulty(difficultyRating);
     }
 
+    //Difficulty rating of each level
     public void CurDiff()
     {
         if (CurrentSong == 0)
@@ -133,6 +135,7 @@ public class LevelSelect_MusicManager : MonoBehaviour
         }
     }
 
+    //Hardcoded difficulty rating
     public void Difficulty(int difficulty)
     {
         if (difficulty == 1)

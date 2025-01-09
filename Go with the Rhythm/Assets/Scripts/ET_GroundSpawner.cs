@@ -5,7 +5,9 @@ public class ET_GroundSpawner : MonoBehaviour
     [SerializeField] GameObject groundTile;
     Vector3 nextSpawnPoint;
 
+    //Obstacle spawn value
     int i = 0;
+    //Wall & Floor spawn value
     int j = 0;
 
     public void SpawnTile(bool spawnData)

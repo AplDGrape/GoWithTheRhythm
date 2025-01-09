@@ -25,8 +25,10 @@ public class AudioManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Get Song Time Values
         timeStart += Time.deltaTime;
 
+        //Pauses song
         if (PauseMenu.GameisPaused == true)
         {
             if (musicSource.isPlaying)
@@ -43,7 +45,7 @@ public class AudioManager : MonoBehaviour
                 musicSource.Play();
             }
         }
-
+        //Check Gameover status
         if (timeStart >= musicSource.clip.length || PlayerMovement.alive == false)
         {
             SongEnd = false;
@@ -64,6 +66,7 @@ public class AudioManager : MonoBehaviour
         }
         timescore = timeStart;
 
+        //See score value
         Debug.Log(musicSource.time);
     }
 }

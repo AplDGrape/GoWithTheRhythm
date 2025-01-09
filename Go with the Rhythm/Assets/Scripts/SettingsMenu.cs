@@ -21,6 +21,7 @@ public class SettingsMenu : MonoBehaviour
         }
     }
 
+    //Change volume
     public void SetVolume()
     {
         float volume = musicSlider.value;
@@ -28,6 +29,7 @@ public class SettingsMenu : MonoBehaviour
         PlayerPrefs.SetFloat("musicVolume", volume);
     }
 
+    //Loads previous user selected value of colume
     private void LoadVolume()
     {
         musicSlider.value = PlayerPrefs.GetFloat("musicVolume");

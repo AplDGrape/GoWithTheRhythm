@@ -20,18 +20,6 @@ public class LevelSelectScript : MonoBehaviour, IEndDragHandler
     [SerializeField] Button prevBtn;
     [SerializeField] Button nextBtn;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     private void Awake()
     {
         currentPage = 1;
@@ -41,6 +29,7 @@ public class LevelSelectScript : MonoBehaviour, IEndDragHandler
         UpdateArrowButton();
     }
 
+    //Go to next page of level select
     public void Next()
     {
         if (currentPage < maxPage)
@@ -51,6 +40,7 @@ public class LevelSelectScript : MonoBehaviour, IEndDragHandler
         }
     }
 
+    //Go to previous page of level select
     public void Previous()
     {
         if (currentPage > 1)
@@ -61,22 +51,26 @@ public class LevelSelectScript : MonoBehaviour, IEndDragHandler
         }
     }
 
+    //Move pages using Lean Tween import
     void MovePage()
     {
         levelPagesRect.LeanMoveLocal(targetPos, tweenTime).setEase(tweenType);
         UpdateArrowButton();
     }
 
+    //Go to Main Menu
     public void backScene()
     {
         SceneManager.LoadScene("MainMenu");
     }
 
+    //Go to first Level game scene
     public void ElectricTherapyScene()
     {
         SceneManager.LoadScene("ElectricTherapy");
     }
 
+    //Arrow button status
     void UpdateArrowButton()
     {
         nextBtn.interactable = true;
@@ -100,6 +94,7 @@ public class LevelSelectScript : MonoBehaviour, IEndDragHandler
         }
     }
 
+    //Draggable screen (temp)
     public void OnEndDrag(PointerEventData eventData)
     {
         //If page swipe more than dragThresould -> page change
